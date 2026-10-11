@@ -1,0 +1,18 @@
+{
+  "_comment": "把下面 mcpServers 这一段合并进你的客户端配置。Claude Desktop：~/Library/Application Support/Claude/claude_desktop_config.json（macOS）或 %APPDATA%/Claude/claude_desktop_config.json（Windows）。Cursor：~/.cursor/mcp.json。",
+  "mcpServers": {
+    "ev-diagnosis": {
+      "command": "npx",
+      "args": ["-y", "ev-diagnosis-mcp"],
+      "env": {}
+    }
+  },
+  "本地源码方式": {
+    "mcpServers": {
+      "ev-diagnosis": {
+        "command": "node",
+        "args": ["D:/path/to/ev-diagnosis-mcp/server.mjs"]
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+# Smithery 部署配置（stdio 传输，无配置项，零依赖）
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties: {}
+  commandFunction: |-
+    (config) => ({ command: 'node', args: ['server.mjs'] })
+build:
+  dockerfile: Dockerfile
+  dockerBuildPath: .

@@ -1,0 +1,52 @@
+{
+  "name": "ev-diagnosis-mcp",
+  "version": "1.1.0",
+  "description": "新能源汽车维修诊断 MCP 服务（中文）：故障码查询、老师傅经验检索、车型通病、现象反查、结构化诊断结论。896 条标准码 + 146 条中文维修库 + 190 条实战经验 + 44 条车型通病。零依赖，纯本地数据，不联网不调模型。",
+  "type": "module",
+  "bin": {
+    "ev-diagnosis": "./server.mjs"
+  },
+  "main": "./server.mjs",
+  "files": [
+    "server.mjs",
+    "test.mjs",
+    "preview.mjs",
+    "assets",
+    "README.md",
+    "README_EN.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node test.mjs",
+    "preview": "node preview.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "新能源汽车",
+    "电动汽车",
+    "汽车维修",
+    "故障诊断",
+    "故障码",
+    "DTC",
+    "维修经验",
+    "电池",
+    "ev",
+    "diagnosis"
+  ],
+  "author": "鸿鑫",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1ouxilisi/ev-diagnosis-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/1ouxilisi/ev-diagnosis-mcp/issues"
+  },
+  "homepage": "https://github.com/1ouxilisi/ev-diagnosis-mcp#readme"
+}

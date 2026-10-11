@@ -1,0 +1,7 @@
+{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2024-11-05","capabilities":{},"clientInfo":{"name":"test","version":"1"}}}
+{"jsonrpc":"2.0","id":2,"method":"tools/list","params":{}}
+{"jsonrpc":"2.0","id":3,"method":"tools/call","params":{"name":"lookup_fault_code","arguments":{"code":"P0A7F"}}}
+{"jsonrpc":"2.0","id":4,"method":"tools/call","params":{"name":"search_experience","arguments":{"query":"涉水后无法上电 绝缘"}}}
+{"jsonrpc":"2.0","id":5,"method":"tools/call","params":{"name":"list_model_issues","arguments":{"brand":"特斯拉","model":"Model 3"}}}
+{"jsonrpc":"2.0","id":6,"method":"tools/call","params":{"name":"symptom_to_codes","arguments":{"symptom":"充不进电"}}}
+{"jsonrpc":"2.0","id":7,"method":"tools/call","params":{"name":"lookup_fault_code","arguments":{"code":"ZZZZ"}}}

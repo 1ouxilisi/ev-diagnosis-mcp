@@ -1,0 +1,23 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-16/server.schema.json",
+  "name": "io.github.1ouxilisi/ev-diagnosis",
+  "description": "新能源汽车维修诊断数据服务（中文）：故障码查询、老师傅实战经验检索、车型通病、现象反查故障码、结构化诊断结论。896 条标准码 + 146 条中文维修库 + 190 条实战经验 + 44 条车型通病。零依赖，纯本地数据，不联网。",
+  "status": "active",
+  "repository": {
+    "url": "https://github.com/1ouxilisi/ev-diagnosis-mcp",
+    "source": "github"
+  },
+  "version": "1.1.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "ev-diagnosis-mcp",
+      "version": "1.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": []
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "generated_at": "2026-10-11",
+  "policy": "本服务对每个数据集标注来源与真实性等级。等级说明：A=公开数据集原文可追溯；B=结构化整理（字段由行业惯例补全，未逐条实车验证）；C=样例/造数，仅用于演示与结构验证。",
+  "datasets": [
+    {
+      "key": "dtc",
+      "file": "dtc.json",
+      "name": "新能源汽车标准故障码（三电/高压）",
+      "count": 896,
+      "source": "ModelScope 开源数据集 Never84/Vehicle_DTC_Diagnostic_Trouble_Code_Definitions",
+      "source_url": "https://www.modelscope.cn/datasets/Never84/Vehicle_DTC_Diagnostic_Trouble_Code_Definitions",
+      "license": "Apache License 2.0",
+      "grade": "A",
+      "note": "原始条目为英文定义（code / mf / en 三字段）。本服务原样返回英文原文，并用内置术语词典做术语级中文对照，对照为规则映射、非人工逐条翻译，可能存在偏差。"
+    },
+    {
+      "key": "faults",
+      "file": "faults.json",
+      "name": "新能源故障码维修库（含原因/步骤/方案/工时/报价）",
+      "count": 146,
+      "source": "本团队维修知识库（含国标与整车厂公开维修手册整理）",
+      "grade": "B",
+      "note": "诊断步骤与工时报价为行业通行区间，需按车型年款与实际工位校准。"
+    },
+    {
+      "key": "experience",
+      "file": "experience.json",
+      "name": "老师傅实战经验",
+      "count": 190,
+      "source": "本团队维修知识库沉淀",
+      "grade": "B",
+      "note": "经验条目来自维修场景归纳，非单一真实工单原文；具有实战参考价值，不作为判定依据。"
+    },
+    {
+      "key": "model_issues",
+      "file": "model_issues.json",
+      "name": "车型通病（车型 × 故障码关联）",
+      "count": 44,
+      "source": "本团队维修知识库沉淀",
+      "grade": "B",
+      "note": "品牌车型维度的高发关联，样本量有限，不代表该车型必然发生。"
+    },
+    {
+      "key": "symptoms",
+      "file": "symptoms.json",
+      "name": "故障现象 → 故障码映射",
+      "count": 40,
+      "source": "本团队维修知识库沉淀",
+      "grade": "B"
+    },
+    {
+      "key": "models",
+      "file": "models.json",
+      "name": "新能源车型与电池类型",
+      "count": 34,
+      "source": "公开车型参数整理",
+      "grade": "A",
+      "note": "品牌/车型/年款/电池类型为公开参数。"
+    },
+    {
+      "key": "parts",
+      "file": "parts.json",
+      "name": "常用配件与规格",
+      "count": 56,
+      "source": "公开配件信息整理",
+      "grade": "B"
+    }
+  ],
+  "real_workorder_import": {
+    "supported": true,
+    "tool": "tools/import_workorders.py",
+    "effect": "导入后条目新增 source=real_workorder，等级自动升为 A，并在 kb_stats 中单独计数。"
+  },
+  "disclaimer": "本服务输出为维修辅助参考，不构成维修结论。高压作业须由具备资质的人员按整车厂手册执行。"
+}
